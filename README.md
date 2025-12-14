@@ -45,3 +45,25 @@ The **[Best Model Name]** performed best with an accuracy/score of **[Insert Sco
 1. Clone the repository:
    ```bash
    git clone [https://github.com/Mohammed-Tofiq/urban-ecosystem.git](https://github.com/Mohammed-Tofiq/urban-ecosystem.git)
+
+
+graph TD
+    A[Raw Urban Data] -->|Preprocessing| B(Data Cleaning & Scaling)
+    B --> C{Feature Engineering}
+    C -->|Input| D[Machine Learning Model]
+    
+    subgraph "Core Logic"
+    D --> E[Random Forest / Regressor]
+    E --> F[Feature Importance Analysis]
+    end
+    
+    F --> G[Prediction Output]
+    G --> H[Impact Simulation Engine]
+    
+    H --> I[Policy Recommendations]
+    I --> J((Final Report))
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:2px
+    style H fill:#bfb,stroke:#333,stroke-width:2px
+    style I fill:#f96,stroke:#333,stroke-width:2px
